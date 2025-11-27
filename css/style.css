@@ -1,0 +1,325 @@
+/* Style ban đầu từ file gốc */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.menu button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    transition: background 0.3s;
+}
+
+.menu button:hover {
+    background: #45a049;
+}
+
+.mode-selector button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background: #2196F3;
+    color: white;
+}
+
+.mode-selector button:hover {
+    background: #0b7dda;
+}
+
+.mode-selector button.active {
+    background: #ff9800;
+}
+
+/* Style mới - Fantasy Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', 'Times New Roman', serif;
+}
+
+body {
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(120, 80, 200, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(200, 120, 80, 0.2) 0%, transparent 40%),
+        linear-gradient(135deg, #0c0c1a, #1a1a3a, #2d1b4e);
+    color: #f8f4e9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+}
+
+.game-title {
+    font-size: 4rem; /* Giảm kích thước font để vừa trên 1 dòng */
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 3px 0 #8b4513, 0 0 20px rgba(255, 215, 0, 0.7);
+    color: #f8d568;
+    letter-spacing: 2px; /* Giảm khoảng cách chữ */
+    position: relative;
+    display: inline-block;
+    padding: 0 1rem;
+    line-height: 1.2; /* Đảm bảo chiều cao dòng phù hợp */
+    white-space: nowrap; /* Ngăn không cho chữ xuống dòng */
+}
+
+.game-title:before, .game-title:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80px; /* Giảm chiều dài đường trang trí */
+    height: 25px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"><path d="M10,15 Q30,5 50,15 T90,15" stroke="%23f8d568" fill="none" stroke-width="2"/></svg>');
+    background-repeat: no-repeat;
+}
+
+.game-title:before {
+    left: -90px; /* Điều chỉnh vị trí cho phù hợp */
+}
+
+.game-title:after {
+    right: -90px; /* Điều chỉnh vị trí cho phù hợp */
+    transform: scaleX(-1);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    color: #d4c19c;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    margin: 0;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.4rem;
+    background: 
+        linear-gradient(to bottom, #5d4037, #3e2723),
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(139, 69, 19, 0.3) 10px, rgba(139, 69, 19, 0.3) 20px);
+    color: #f8d568;
+    border: 3px solid #8b4513;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 1px 1px 2px #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+}
+
+.menu-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: 
+        linear-gradient(to bottom, #6d4c41, #4e342e),
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(160, 82, 45, 0.4) 10px, rgba(160, 82, 45, 0.4) 20px);
+}
+
+.menu-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
+    transition: left 0.7s;
+}
+
+.menu-btn:hover:before {
+    left: 100%;
+}
+
+.btn-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Fantasy Elements */
+.fantasy-element {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.sword {
+    top: 15%;
+    left: 10%;
+    transform: rotate(-15deg);
+    animation: float 8s ease-in-out infinite;
+    font-size: 3rem;
+    color: #c0c0c0;
+}
+
+.shield {
+    bottom: 20%;
+    left: 8%;
+    transform: rotate(10deg);
+    animation: float 7s ease-in-out infinite 1s;
+    font-size: 3rem;
+    color: #b8860b;
+}
+
+.dragon {
+    top: 10%;
+    right: 12%;
+    transform: rotate(15deg);
+    animation: float 9s ease-in-out infinite 0.5s;
+    font-size: 3rem;
+    color: #d22b2b;
+}
+
+.castle {
+    bottom: 15%;
+    right: 10%;
+    transform: rotate(-10deg);
+    animation: float 6s ease-in-out infinite 1.5s;
+    font-size: 3rem;
+    color: #808080;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(var(--rotation, 0deg)); }
+    50% { transform: translateY(-20px) rotate(var(--rotation, 0deg)); }
+}
+
+@keyframes glow {
+    from { text-shadow: 3px 3px 0 #8b4513, 0 0 20px rgba(255, 215, 0, 0.7); }
+    to { text-shadow: 3px 3px 0 #8b4513, 0 0 30px rgba(255, 215, 0, 0.9), 0 0 40px rgba(255, 215, 0, 0.6); }
+}
+
+/* Background details */
+.background-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: 
+        linear-gradient(to top, #1a1a3a, transparent),
+        repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(50, 50, 100, 0.3) 20px, rgba(50, 50, 100, 0.3) 40px);
+    clip-path: polygon(0% 100%, 10% 70%, 20% 90%, 30% 60%, 40% 80%, 50% 50%, 60% 70%, 70% 40%, 80% 60%, 90% 30%, 100% 100%);
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+        radial-gradient(2px 2px at 40% 70%, #fff, transparent),
+        radial-gradient(1px 1px at 60% 20%, #fff, transparent),
+        radial-gradient(1px 1px at 80% 50%, #fff, transparent),
+        radial-gradient(2px 2px at 30% 80%, #fff, transparent);
+    background-size: 200px 200px;
+    animation: twinkle 4s infinite alternate;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.8; }
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #d4c19c;
+    font-size: 0.9rem;
+    z-index: 5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 2.8rem; /* Giảm thêm kích thước cho mobile */
+        letter-spacing: 1px;
+    }
+    
+    .fantasy-element {
+        font-size: 2rem;
+    }
+    
+    .menu-btn {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .game-title:before, .game-title:after {
+        width: 50px; /* Giảm kích thước đường trang trí trên mobile */
+    }
+    
+    .game-title:before {
+        left: -60px;
+    }
+    
+    .game-title:after {
+        right: -60px;
+    }
+}
+
+/* Đảm bảo tiêu đề không bị cắt trên màn hình rất nhỏ */
+@media (max-width: 480px) {
+    .game-title {
+        font-size: 2.2rem;
+        white-space: normal; /* Cho phép xuống dòng nếu thực sự cần */
+        line-height: 1.3;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+}

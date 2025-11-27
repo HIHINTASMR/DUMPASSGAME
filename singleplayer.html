@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleplayer - Stickman Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html, body { margin:0; padding:0; overflow:hidden; background:#fff; }
+        canvas { display:block; background:#fff; }
+        #creativeIcon { 
+            position:absolute; 
+            top:10px; 
+            right:10px;
+            font-family:sans-serif; 
+            font-size:18px; 
+            font-weight:bold; 
+            color:black;
+            display:none; 
+        }
+    </style>
+</head>
+<body>
+    <div id="creativeIcon">C</div>
+    <canvas id="game"></canvas>
+
+    <script src="js/utils.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/physics.js"></script>
+    <script src="js/combat.js"></script>
+    <script src="js/hud.js"></script>
+    <script src="js/singleplayer.js"></script>
+</body>
+</html>
