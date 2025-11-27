@@ -26,31 +26,20 @@
 
 -Các nút:
 
-| Chức năng       | P1 / 1P | P2           |
+| Chức năng       | P1 / 1P | P2         |
+|-----------------|---------|------------|
+| Sang phải       | D       | → (Right)  |
+| Sang trái       | A       | ← (Left)   |
+| Lên trên        | W       | ↑ (Up)     |
+| Dựng khiên      | S       | ↓ (Down)   |
+| Đánh thường     | J       | 1          |
+| Đánh mạnh       | K       | 2          |
+| Lăn             | L       | 3          |
+| Chưởng thường   | U       | 4          |
+| Chưởng mạnh     | I       | 5          |
+| Bú máu          | 2       | 8          |
+| Bú mana         | 1       | 7          |
 
-|-----------------|---------|-------------|
-
-| Sang phải       | D       | → (Right)   |
-
-| Sang trái       | A       | ← (Left)    |
-
-| Lên trên        | W       | ↑ (Up)      |
-
-| Dựng khiên      | S       | ↓ (Down)    |
-
-| Đánh thường     | J       | 1           |
-
-| Đánh mạnh       | K       | 2           |
-
-| Lăn             | L       | 3           |
-
-| Chưởng thường   | U       | 4           |
-
-| Chưởng mạnh     | I       | 5           |
-
-| Bú máu          | 2       | 8           |
-
-| Bú mana         | 1       | 7           |
 
 
 
