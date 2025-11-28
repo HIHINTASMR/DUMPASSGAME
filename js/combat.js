@@ -48,7 +48,7 @@ class Combat {
 
     	this.attackHitboxes.push({
             x: originX,
-            y: player.y - 50 -size/2,
+            y: player.y - 50 - size/2,
             width: width,
             height: size,
             damage: attackType === 'normal' ? 10 : 40,
